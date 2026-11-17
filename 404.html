@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Stackly Stock Trading &amp; Investment</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Base Theme Stylesheet & Custom 404 Animations -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <style>
+    /* ==========================================================================
+       404 Page Custom Attractive Animations & Layout Styles
+       ========================================================================== */
+    body.page-404 {
+      min-height: 100vh;
+      background: #0A0F1D;
+      color: #FFFFFF;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Background Ambient Glowing Lights */
+    .bg-ambient-lights {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background: 
+        radial-gradient(circle at 20% 25%, rgba(37, 99, 235, 0.22) 0%, transparent 45%),
+        radial-gradient(circle at 80% 75%, rgba(239, 68, 68, 0.16) 0%, transparent 45%),
+        radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.12) 0%, transparent 60%);
+    }
+
+    /* Watermark Candlestick Pattern */
+    .bg-watermark-candlesticks {
+      position: fixed;
+      inset: 0;
+      background-image: url('assets/images/candlestick-pattern.svg');
+      background-repeat: repeat;
+      background-size: 320px auto;
+      opacity: 0.08;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Minimal Top Header */
+    .header-404 {
+      position: relative;
+      z-index: 10;
+      padding: 24px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1300px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .brand-404 {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-404 .logo-cube img {
+      width: 38px;
+      height: 38px;
+      display: block;
+      filter: drop-shadow(0 4px 12px rgba(47, 101, 246, 0.5));
+    }
+
+    .brand-404 .brand-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+    }
+
+    .status-badge-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      color: #F87171;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .status-badge-live .pulse-dot-red {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #EF4444;
+      box-shadow: 0 0 10px #EF4444;
+      animation: pulseAlert 1.6s infinite ease-in-out;
+    }
+
+    @keyframes pulseAlert {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.6; }
+    }
+
+    /* Main Centered 404 Stage */
+    .main-404-container {
+      position: relative;
+      z-index: 5;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px 80px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .card-404-stage {
+      position: relative;
+      background: rgba(19, 30, 53, 0.65);
+      border: 1px solid rgba(96, 165, 250, 0.2);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-radius: 36px;
+      padding: 60px 48px;
+      box-shadow: 0 30px 80px -15px rgba(0, 0, 0, 0.7), 0 0 30px rgba(37, 99, 235, 0.15);
+      overflow: hidden;
+      width: 100%;
+    }
+
+    /* Animated 3D Floating Elements */
+    .floating-candlestick {
+      position: absolute;
+      pointer-events: none;
+      opacity: 0.35;
+      animation: floatCandle 6s infinite ease-in-out;
+    }
+
+    .candle-1 {
+      top: 15%;
+      left: 8%;
+      animation-duration: 5.5s;
+    }
+
+    .candle-2 {
+      bottom: 20%;
+      right: 10%;
+      animation-duration: 7s;
+      animation-delay: 1.5s;
+    }
+
+    .candle-3 {
+      top: 25%;
+      right: 12%;
+      animation-duration: 6.2s;
+      animation-delay: 0.8s;
+    }
+
+    @keyframes floatCandle {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-18px) rotate(4deg); }
+    }
+
+    /* Spectacular 404 Text Animation with Neon Glow */
+    .number-404-wrap {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+
+    .number-404-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 150px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      background: linear-gradient(135deg, #FFFFFF 0%, #60A5FA 45%, #2563EB 75%, #FF3B30 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 10px 40px rgba(37, 99, 235, 0.5);
+      animation: glowFloat 4s infinite ease-in-out;
+      display: inline-block;
+    }
+
+    @keyframes glowFloat {
+      0%, 100% {
+        transform: translateY(0) scale(1);
+        filter: drop-shadow(0 0 25px rgba(59, 130, 246, 0.45));
+      }
+      50% {
+        transform: translateY(-8px) scale(1.02);
+        filter: drop-shadow(0 0 45px rgba(239, 68, 68, 0.45));
+      }
+    }
+
+    /* Radar Sweep Circle */
+    .radar-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 1px dashed rgba(96, 165, 250, 0.25);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      animation: radarRotate 12s linear infinite;
+    }
+
+    @keyframes radarRotate {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    /* Badge Tag */
+    .badge-error-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(37, 99, 235, 0.16);
+      border: 1px solid rgba(96, 165, 250, 0.35);
+      padding: 6px 18px;
+      border-radius: 9999px;
+      color: #93C5FD;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    /* Heading & Description */
+    .title-404 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 38px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+
+    .desc-404 {
+      font-size: 16px;
+      line-height: 1.65;
+      color: #94A3B8;
+      max-width: 620px;
+      margin: 0 auto 36px;
+    }
+
+    /* EXACTLY TWO BUTTONS ONLY: Back Home & Back Page */
+    .actions-404-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    /* Button 1: Back Home (Signature Radiant Red Pill) */
+    .btn-404-home {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #FF3B30 0%, #E02B20 100%);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: 9999px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 12px 28px rgba(255, 59, 48, 0.4);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn-404-home:hover {
+      background: linear-gradient(135deg, #FF5247 0%, #FF3B30 100%);
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 18px 36px rgba(255, 59, 48, 0.55);
+      color: #FFFFFF;
+    }
+
+    .btn-404-home:active {
+      transform: translateY(0) scale(1);
+    }
+
+    /* Button 2: Back Page (Glassmorphism Outline Pill) */
+    .btn-404-back {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      color: #FFFFFF;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 15px 34px;
+      border-radius: 9999px;
+      border: 1.5px solid rgba(255, 255, 255, 0.25);
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn-404-back:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(96, 165, 250, 0.6);
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(37, 99, 235, 0.35);
+      color: #FFFFFF;
+    }
+
+    .btn-404-back:active {
+      transform: translateY(0) scale(1);
+    }
+
+    /* Subtle Footer Info */
+    .footer-404-bar {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #64748B;
+    }
+
+    /* Mobile Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .header-404 {
+        padding: 20px;
+      }
+      .card-404-stage {
+        padding: 40px 24px;
+        border-radius: 24px;
+      }
+      .number-404-text {
+        font-size: 100px;
+      }
+      .title-404 {
+        font-size: 28px;
+      }
+      .desc-404 {
+        font-size: 14px;
+      }
+      .actions-404-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+      }
+      .btn-404-home,
+      .btn-404-back {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="page-404">
+
+  <!-- Background Ambient Glow & Candlestick Watermark -->
+  <div class="bg-ambient-lights"></div>
+  <div class="bg-watermark-candlesticks"></div>
+
+  <!-- Minimal Top Header -->
+  <header class="header-404">
+    <a href="index.html" class="brand-404" aria-label="Stackly Home">
+      <img src="assets/images/stackly_.webp" alt="Stackly Logo" class="brand-logo-img" height="38" style="height:38px;width:auto;display:block;">
+    </a>
+
+    <div class="status-badge-live">
+      <span class="pulse-dot-red"></span>
+      <span>404 Market Outlier</span>
+    </div>
+  </header>
+
+  <!-- Main Centered 404 Stage -->
+  <main class="main-404-container">
+    <div class="card-404-stage">
+
+      <!-- Floating Animated Candlesticks Graphics -->
+      <svg class="floating-candlestick candle-1" width="48" height="96" viewBox="0 0 24 48" fill="none">
+        <line x1="12" y1="2" x2="12" y2="46" stroke="#10B981" stroke-width="2"/>
+        <rect x="6" y="10" width="12" height="26" rx="2" fill="#10B981"/>
+      </svg>
+
+      <svg class="floating-candlestick candle-2" width="48" height="96" viewBox="0 0 24 48" fill="none">
+        <line x1="12" y1="4" x2="12" y2="44" stroke="#EF4444" stroke-width="2"/>
+        <rect x="6" y="14" width="12" height="20" rx="2" fill="#EF4444"/>
+      </svg>
+
+      <svg class="floating-candlestick candle-3" width="36" height="72" viewBox="0 0 24 48" fill="none">
+        <line x1="12" y1="2" x2="12" y2="46" stroke="#60A5FA" stroke-width="2"/>
+        <rect x="7" y="12" width="10" height="22" rx="2" fill="#3B82F6"/>
+      </svg>
+
+      <!-- Badge Tag -->
+      <div class="badge-error-tag">
+        <span>Signal Interrupted &bull; Error Code 404</span>
+      </div>
+
+      <!-- Spectacular Floating Neon 404 Visual -->
+      <div class="number-404-wrap">
+        <div class="radar-circle"></div>
+        <div class="number-404-text">404</div>
+      </div>
+
+      <!-- Main Error Title & Description -->
+      <h1 class="title-404">Trade Signal Lost: Page Not Found</h1>
+      
+      <p class="desc-404">
+        The financial instrument, chart data, or endpoint you're looking for has been delisted, moved to an external liquidity pool, or does not exist on the Stackly global exchange.
+      </p>
+
+      <!-- EXACTLY TWO BUTTONS ONLY AS REQUESTED -->
+      <div class="actions-404-group">
+        
+        <!-- Button 1: Back Home -->
+        <a href="index.html" class="btn-404-home" id="btnBackHome">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <span>Back Home</span>
+        </a>
+
+        <!-- Button 2: Back Page -->
+        <button type="button" class="btn-404-back" id="btnBackPage" onclick="if (window.history.length > 1) { window.history.back(); } else { window.location.href='index.html'; }">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"/>
+            <polyline points="12 19 5 12 12 5"/>
+          </svg>
+          <span>Back Page</span>
+        </button>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Bottom Minimal Footer Bar -->
+  <footer class="footer-404-bar">
+    &copy; 2026 Stackly. Stock Trading &amp; Investment Ecosystem. All rights reserved.
+  </footer>
+
+</body>
+</html>

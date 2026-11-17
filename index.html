@@ -1,0 +1,1926 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly - Stock Trading & Investment Platform</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Theme Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Navigation Header
+       Matches screenshot layout: Logo (Left), Nav Menu (Center), Action (Right)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="nav-container">
+      
+      <!-- Logo: 3D Isometric Cube + "Stackly" -->
+      <a href="#" class="brand-logo" aria-label="Stackly Home">
+        <img src="assets/images/stackly_.webp" alt="Stackly Logo" class="brand-logo-img" height="38" style="height:38px;width:auto;display:block;">
+      </a>
+
+      <!-- Center Nav Links: Home, About, Feature, Shop, Blog, Contact -->
+      <nav class="nav-menu-wrapper" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="feature.html" class="nav-link">Feature</a>
+          </li>
+          <li class="nav-item">
+            <a href="shop.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Action: Dashboard Button -->
+      <div class="nav-actions">
+        <a href="login.html" class="btn-explore">Login</a>
+        
+        <!-- Mobile Menu Hamburger Button -->
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Hero Section
+       Signature Curved Royal Blue Container with Candlestick Watermark,
+       5-Slide High Quality WebP Background Showcase, Left Copy & Right 3D Phones
+       ========================================================================= -->
+  <main class="hero-wrapper">
+    <section class="hero-card" id="home">
+      
+      <!-- Top Auto-Slide Progress Bar -->
+      <div class="hero-progress-track">
+        <div class="hero-progress-bar"></div>
+      </div>
+
+      <!-- Prominent Side Navigation Arrows for Hero Carousel -->
+      <button class="hero-arrow hero-arrow-left" aria-label="Previous Slide" title="Previous Slide">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor"/></svg>
+      </button>
+      <button class="hero-arrow hero-arrow-right" aria-label="Next Slide" title="Next Slide">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6 6-6" stroke="currentColor"/></svg>
+      </button>
+
+      <!-- Watermark Candlestick Trading Graph Pattern (from screenshot) -->
+      <div class="hero-watermark"></div>
+
+      <!-- 5-Slide WebP Background Engine (Theme Related, High Quality, < 100KB) -->
+      <div class="hero-slider-bg">
+        <div class="slide-item active" style="background-image: url('assets/images/slide1.webp');" data-index="0" data-title="Live Trading Dashboard" data-subtitle="Real-time candlestick charts &amp; portfolio analytics"></div>
+        <div class="slide-item" style="background-image: url('assets/images/slide2.webp');" data-index="1" data-title="Global Stock Exchange" data-subtitle="Worldwide financial network &amp; international liquidity"></div>
+        <div class="slide-item" style="background-image: url('assets/images/slide3.webp');" data-index="2" data-title="Algorithmic AI Trading" data-subtitle="Neural financial predictive models &amp; smart execution"></div>
+        <div class="slide-item" style="background-image: url('assets/images/slide4.webp');" data-index="3" data-title="Multi-Screen Workstation" data-subtitle="Desktop &amp; mobile synchronized portfolio suite"></div>
+        <div class="slide-item" style="background-image: url('assets/images/slide5.webp');" data-index="4" data-title="Wealth &amp; Asset Management" data-subtitle="Long-term compounding &amp; 3D ascending market curves"></div>
+        <div class="hero-slider-overlay"></div>
+      </div>
+
+      <!-- Hero Content Inner Grid -->
+      <div class="hero-grid">
+        
+        <!-- Left Column: Typography, Subtitle, & Pill Button -->
+        <div class="hero-left">
+          
+          <div class="hero-badge-tag">
+            <span class="pulse-dot"></span>
+            <span class="hero-badge-text">Slide 1/5 &bull; Live Trading Dashboard</span>
+          </div>
+
+          <h1 class="hero-title">
+            Your Gateway to<br>
+            Secure Buy, Sell, and<br>
+            Trade Stocks & Crypto
+          </h1>
+
+          <p class="hero-description">
+            Stackly is a cutting-edge platform designed to simplify and enhance your trading experience. Whether you're a seasoned trader or just starting, Stackly offers the tools and resources you need to succeed.
+          </p>
+
+          <a href="404.html" class="btn-started">
+            <span>Let's Get Started</span>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18l6-6-6-6" stroke="currentColor"/>
+            </svg>
+          </a>
+
+          <!-- Slide Controller Bar -->
+          <div class="hero-slider-bar">
+            <!-- Nav Controls (Prev, Next, Play/Pause) -->
+            <div class="slider-nav-controls">
+              <button class="slider-nav-btn slider-prev" aria-label="Previous Slide" title="Previous Slide">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor"/></svg>
+              </button>
+              <button class="slider-nav-btn slider-next" aria-label="Next Slide" title="Next Slide">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6 6-6" stroke="currentColor"/></svg>
+              </button>
+              <button class="slider-play-toggle" aria-label="Pause Auto Slider" title="Pause / Resume Slider">
+                <svg class="icon-pause" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+              </button>
+            </div>
+
+            <!-- 5 Slide Dots Indicator -->
+            <div class="slider-dots">
+              <div class="slider-dot active" data-slide="0" title="Slide 1: Trading Dashboard"></div>
+              <div class="slider-dot" data-slide="1" title="Slide 2: Global Exchange"></div>
+              <div class="slider-dot" data-slide="2" title="Slide 3: Algorithmic AI"></div>
+              <div class="slider-dot" data-slide="3" title="Slide 4: Trading Workstation"></div>
+              <div class="slider-dot" data-slide="4" title="Slide 5: Wealth Management"></div>
+            </div>
+
+            <!-- Slide Counter (e.g. 01 / 05) -->
+            <div class="slide-counter">
+              <span class="curr-slide">01</span> / <span class="total-slides">05</span>
+            </div>
+
+            <!-- Active Slide Theme Indicator -->
+            <div class="slide-theme-indicator">
+              <span class="slide-theme-title">Live Trading Dashboard</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Dual SVG Phone Mockups - Crisp Trading App UI -->
+        <div class="hero-right">
+          <div class="hero-phone-mockup-wrap">
+
+            <!-- Back Phone (tilted) -->
+            <div class="hero-phone hero-phone-back">
+              <svg viewBox="0 0 300 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="2" y="2" width="296" height="596" rx="38" fill="url(#pgBack)" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+                <rect x="12" y="48" width="276" height="508" rx="8" fill="#0F172A"/>
+                <rect x="105" y="12" width="90" height="20" rx="10" fill="#1E293B"/>
+                <rect x="12" y="48" width="276" height="52" fill="#1A2847"/>
+                <text x="36" y="78" font-family="Segoe UI,sans-serif" font-size="15" font-weight="700" fill="white">Portfolio</text>
+                <rect x="22" y="116" width="256" height="96" rx="16" fill="url(#cgBack)"/>
+                <text x="38" y="142" font-family="Segoe UI,sans-serif" font-size="10" fill="rgba(255,255,255,0.7)">Total Balance</text>
+                <text x="38" y="168" font-family="Segoe UI,sans-serif" font-size="24" font-weight="800" fill="white">$48,320</text>
+                <text x="38" y="192" font-family="Segoe UI,sans-serif" font-size="10" fill="#34D399">&#x25B2; +2.4%  +$1,124 today</text>
+                <polyline points="188,186 200,172 212,178 226,158 240,164 256,144 268,152" stroke="#34D399" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="22" y="226" width="256" height="54" rx="12" fill="rgba(255,255,255,0.05)"/>
+                <circle cx="50" cy="253" r="15" fill="#F7931A"/>
+                <text x="43" y="258" font-family="Segoe UI,sans-serif" font-size="12" font-weight="700" fill="white">B</text>
+                <text x="74" y="248" font-family="Segoe UI,sans-serif" font-size="13" font-weight="600" fill="white">Bitcoin</text>
+                <text x="74" y="264" font-family="Segoe UI,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">BTC</text>
+                <text x="210" y="248" font-family="Segoe UI,sans-serif" font-size="13" font-weight="700" fill="white">$43,180</text>
+                <text x="218" y="264" font-family="Segoe UI,sans-serif" font-size="10" fill="#34D399">+3.2%</text>
+                <rect x="22" y="288" width="256" height="54" rx="12" fill="rgba(255,255,255,0.05)"/>
+                <circle cx="50" cy="315" r="15" fill="#627EEA"/>
+                <text x="45" y="320" font-family="Segoe UI,sans-serif" font-size="12" font-weight="700" fill="white">E</text>
+                <text x="74" y="310" font-family="Segoe UI,sans-serif" font-size="13" font-weight="600" fill="white">Ethereum</text>
+                <text x="74" y="326" font-family="Segoe UI,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">ETH</text>
+                <text x="210" y="310" font-family="Segoe UI,sans-serif" font-size="13" font-weight="700" fill="white">$2,840</text>
+                <text x="218" y="326" font-family="Segoe UI,sans-serif" font-size="10" fill="#F87171">-1.1%</text>
+                <rect x="12" y="528" width="276" height="48" fill="#1A2847"/>
+                <circle cx="58" cy="552" r="5" fill="#2563EB"/>
+                <circle cx="108" cy="552" r="4" fill="rgba(255,255,255,0.25)"/>
+                <circle cx="158" cy="552" r="4" fill="rgba(255,255,255,0.25)"/>
+                <circle cx="208" cy="552" r="4" fill="rgba(255,255,255,0.25)"/>
+                <rect x="110" y="582" width="80" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+                <defs>
+                  <linearGradient id="pgBack" x1="0" y1="0" x2="300" y2="600" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#0F172A"/></linearGradient>
+                  <linearGradient id="cgBack" x1="0" y1="116" x2="256" y2="212" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#1D4ED8"/></linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <!-- Front Phone (main display) -->
+            <div class="hero-phone hero-phone-front">
+              <svg viewBox="0 0 300 620" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <ellipse cx="150" cy="610" rx="100" ry="14" fill="rgba(37,99,235,0.2)"/>
+                <rect x="2" y="2" width="296" height="616" rx="40" fill="url(#pgFront)" stroke="rgba(255,255,255,0.18)" stroke-width="2.5"/>
+                <rect x="12" y="50" width="276" height="530" rx="8" fill="#0D1526"/>
+                <rect x="108" y="14" width="84" height="22" rx="11" fill="#0D1526"/>
+                <text x="28" y="36" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600" fill="white">9:41</text>
+                <rect x="246" y="28" width="26" height="11" rx="3" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" fill="none"/>
+                <rect x="248" y="30" width="17" height="7" rx="1.5" fill="white"/>
+                <rect x="12" y="50" width="276" height="58" fill="#112240"/>
+                <text x="34" y="80" font-family="Segoe UI,sans-serif" font-size="16" font-weight="800" fill="white">Stackly</text>
+                <text x="34" y="96" font-family="Segoe UI,sans-serif" font-size="10" fill="rgba(255,255,255,0.45)">Trading Dashboard</text>
+                <circle cx="260" cy="79" r="15" fill="rgba(37,99,235,0.3)"/>
+                <rect x="254" y="74" width="11" height="9" rx="2.5" stroke="#60A5FA" stroke-width="1.4" fill="none"/>
+                <circle cx="260" cy="87" r="2" fill="#60A5FA"/>
+                <rect x="20" y="124" width="260" height="114" rx="20" fill="url(#cgFront)"/>
+                <rect x="20" y="124" width="130" height="114" rx="20" fill="rgba(255,255,255,0.08)"/>
+                <text x="36" y="152" font-family="Segoe UI,sans-serif" font-size="11" fill="rgba(255,255,255,0.7)">Total Balance</text>
+                <text x="36" y="182" font-family="Segoe UI,sans-serif" font-size="28" font-weight="800" fill="white">$84,402</text>
+                <rect x="36" y="196" width="86" height="20" rx="10" fill="rgba(52,211,153,0.2)"/>
+                <text x="46" y="210" font-family="Segoe UI,sans-serif" font-size="10" font-weight="600" fill="#34D399">&#x25B2; +5.8% today</text>
+                <polyline points="186,228 198,212 210,218 224,196 238,204 252,182 268,190 278,170" stroke="rgba(255,255,255,0.65)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="278" cy="170" r="4" fill="white"/>
+                <text x="34" y="262" font-family="Segoe UI,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,0.75)">My Assets</text>
+                <text x="224" y="262" font-family="Segoe UI,sans-serif" font-size="10" fill="#60A5FA">See all</text>
+                <rect x="20" y="272" width="260" height="58" rx="14" fill="rgba(255,255,255,0.06)"/>
+                <circle cx="48" cy="301" r="17" fill="#F7931A" opacity="0.9"/>
+                <text x="41" y="307" font-family="Segoe UI,sans-serif" font-size="14" font-weight="800" fill="white">B</text>
+                <text x="76" y="296" font-family="Segoe UI,sans-serif" font-size="13" font-weight="600" fill="white">Bitcoin</text>
+                <text x="76" y="314" font-family="Segoe UI,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">BTC</text>
+                <text x="208" y="296" font-family="Segoe UI,sans-serif" font-size="13" font-weight="700" fill="white">$43,120</text>
+                <text x="218" y="314" font-family="Segoe UI,sans-serif" font-size="10" font-weight="600" fill="#34D399">+3.1%</text>
+                <rect x="20" y="340" width="260" height="58" rx="14" fill="rgba(255,255,255,0.06)"/>
+                <circle cx="48" cy="369" r="17" fill="#627EEA" opacity="0.9"/>
+                <text x="43" y="375" font-family="Segoe UI,sans-serif" font-size="13" font-weight="800" fill="white">E</text>
+                <text x="76" y="364" font-family="Segoe UI,sans-serif" font-size="13" font-weight="600" fill="white">Ethereum</text>
+                <text x="76" y="382" font-family="Segoe UI,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">ETH</text>
+                <text x="208" y="364" font-family="Segoe UI,sans-serif" font-size="13" font-weight="700" fill="white">$24,140</text>
+                <text x="218" y="382" font-family="Segoe UI,sans-serif" font-size="10" font-weight="600" fill="#F87171">-1.4%</text>
+                <rect x="20" y="408" width="260" height="58" rx="14" fill="rgba(255,255,255,0.06)"/>
+                <circle cx="48" cy="437" r="17" fill="url(#sgFront)" opacity="0.9"/>
+                <text x="43" y="443" font-family="Segoe UI,sans-serif" font-size="11" font-weight="800" fill="white">S</text>
+                <text x="76" y="432" font-family="Segoe UI,sans-serif" font-size="13" font-weight="600" fill="white">Solana</text>
+                <text x="76" y="450" font-family="Segoe UI,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">SOL</text>
+                <text x="208" y="432" font-family="Segoe UI,sans-serif" font-size="13" font-weight="700" fill="white">$7,140</text>
+                <text x="218" y="450" font-family="Segoe UI,sans-serif" font-size="10" font-weight="600" fill="#34D399">+8.6%</text>
+                <rect x="12" y="552" width="276" height="56" fill="#0E1E38"/>
+                <line x1="12" y1="552" x2="288" y2="552" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+                <rect x="26" y="562" width="36" height="32" rx="9" fill="rgba(37,99,235,0.3)"/>
+                <circle cx="44" cy="578" r="8" stroke="#60A5FA" stroke-width="1.5" fill="none"/>
+                <circle cx="44" cy="578" r="3" fill="#60A5FA"/>
+                <circle cx="100" cy="578" r="8" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none"/>
+                <polyline points="92,582 100,570 108,582" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <circle cx="156" cy="578" r="9" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none"/>
+                <line x1="156" y1="573" x2="156" y2="583" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                <line x1="151" y1="578" x2="161" y2="578" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                <rect x="207" y="571" width="16" height="12" rx="2.5" stroke="rgba(255,255,255,0.3)" stroke-width="1.3" fill="none"/>
+                <circle cx="260" cy="571" r="5.5" stroke="rgba(255,255,255,0.3)" stroke-width="1.3" fill="none"/>
+                <path d="M250,585 Q260,580 270,585" stroke="rgba(255,255,255,0.3)" stroke-width="1.3" fill="none"/>
+                <rect x="110" y="604" width="80" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+                <defs>
+                  <linearGradient id="pgFront" x1="0" y1="0" x2="0" y2="620" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1E3A6E"/><stop offset="100%" stop-color="#0A1628"/></linearGradient>
+                  <linearGradient id="cgFront" x1="20" y1="124" x2="280" y2="238" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#1E40AF"/></linearGradient>
+                  <linearGradient id="sgFront" x1="31" y1="420" x2="65" y2="454" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9945FF"/><stop offset="100%" stop-color="#14F195"/></linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <!-- Floating Live Badge -->
+            <div class="hero-phone-badge">
+              <span class="badge-pulse"></span>
+              <span class="badge-text">Live Trading</span>
+            </div>
+
+            <!-- Floating Profit Chip -->
+            <div class="hero-phone-profit-card">
+              <span class="profit-icon">&#128200;</span>
+              <div>
+                <div class="profit-label">Today's Gain</div>
+                <div class="profit-value">+$4,920</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Key Features Section
+       Matches Screenshot: "KEY FEATURES", "Explore the Full Spectrum of Cutting-Edge Trading Features",
+       4 Tall Feature Cards with Circular Icon Badges, Rich Hover Animations & Elevation
+       ========================================================================= -->
+  <section class="features-section" id="features">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="features-header">
+        <span class="features-tag">KEY FEATURES</span>
+        <h2 class="features-title">
+          Explore the Full Spectrum of<br>
+          Cutting-Edge Trading Features
+        </h2>
+      </div>
+
+      <!-- 4 Features Cards Grid -->
+      <div class="features-grid">
+        
+        <!-- Card 1: Real-Time Trading -->
+        <div class="feature-card" data-card="1">
+          <div class="feature-icon-wrapper">
+            <div class="icon-circle-bg"></div>
+            <svg class="feature-svg" viewBox="0 0 64 64" fill="none">
+              <!-- Monitor Frame -->
+              <rect x="8" y="12" width="48" height="34" rx="4" stroke="#2563EB" stroke-width="2.5" fill="none"/>
+              <line x1="24" y1="46" x2="20" y2="54" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="40" y1="46" x2="44" y2="54" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="16" y1="54" x2="48" y2="54" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- Candlestick 1 -->
+              <line x1="19" y1="20" x2="19" y2="38" stroke="#2563EB" stroke-width="1.8"/>
+              <rect x="16" y="24" width="6" height="10" rx="1" stroke="#2563EB" stroke-width="1.8" fill="rgba(37,99,235,0.15)"/>
+              <!-- Candlestick 2 -->
+              <line x1="32" y1="18" x2="32" y2="36" stroke="#2563EB" stroke-width="1.8"/>
+              <rect x="29" y="22" width="6" height="8" rx="1" stroke="#2563EB" stroke-width="1.8" fill="#2563EB"/>
+              <!-- Candlestick 3 -->
+              <line x1="45" y1="16" x2="45" y2="34" stroke="#2563EB" stroke-width="1.8"/>
+              <rect x="42" y="19" width="6" height="11" rx="1" stroke="#2563EB" stroke-width="1.8" fill="rgba(37,99,235,0.15)"/>
+              <!-- Trend Line -->
+              <path d="M 12 36 L 24 30 L 36 34 L 52 20" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-card-title">Real-Time Trading</h3>
+          <p class="feature-card-desc">
+            Stay ahead with real-time data and instant trade execution. Lorem ipsum dolor sit amet.
+          </p>
+          <div class="card-hover-indicator"></div>
+        </div>
+
+        <!-- Card 2: Secure Wallets -->
+        <div class="feature-card" data-card="2">
+          <div class="feature-icon-wrapper">
+            <div class="icon-circle-bg"></div>
+            <svg class="feature-svg" viewBox="0 0 64 64" fill="none">
+              <!-- Wallet Body -->
+              <rect x="18" y="18" width="36" height="30" rx="4" stroke="#2563EB" stroke-width="2.5" fill="none"/>
+              <!-- Protruding Cards / Cash -->
+              <path d="M 26 18 V 13 C 26 11.5 27.5 10 29 10 H 43 C 44.5 10 46 11.5 46 13 V 18" stroke="#2563EB" stroke-width="2" fill="none"/>
+              <!-- Wallet Flap & Clasp -->
+              <path d="M 40 28 H 54 V 38 H 40 C 37.5 38 37.5 28 40 28 Z" stroke="#2563EB" stroke-width="2" fill="rgba(37,99,235,0.1)"/>
+              <circle cx="45" cy="33" r="2.5" fill="#2563EB"/>
+              <!-- Security Shield in foreground -->
+              <path d="M 12 28 C 12 28 17 26 23 25 C 23 37 17 44 12 46 C 7 44 1 37 1 25 C 7 26 12 28 12 28 Z" transform="translate(10, 6) scale(0.7)" stroke="#2563EB" stroke-width="2.5" fill="#FFFFFF"/>
+              <!-- Shield Checkmark -->
+              <path d="M 15 32 L 18 35 L 23 29" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-card-title">Secure Wallets</h3>
+          <p class="feature-card-desc">
+            Your assets are safe with our state-of-the-art security measures.
+          </p>
+          <div class="card-hover-indicator"></div>
+        </div>
+
+        <!-- Card 3: User-Friendly Interface -->
+        <div class="feature-card" data-card="3">
+          <div class="feature-icon-wrapper">
+            <div class="icon-circle-bg"></div>
+            <svg class="feature-svg" viewBox="0 0 64 64" fill="none">
+              <!-- Left Person -->
+              <circle cx="24" cy="22" r="8" stroke="#2563EB" stroke-width="2.5" fill="none"/>
+              <path d="M 10 46 C 10 38 16 35 24 35 C 32 35 38 38 38 46" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <!-- Right Person -->
+              <circle cx="42" cy="20" r="7" stroke="#2563EB" stroke-width="2.2" fill="none"/>
+              <path d="M 33 35 C 36 34 39 33.5 42 33.5 C 49 33.5 54 36.5 54 44" stroke="#2563EB" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="feature-card-title">User-Friendly Interface</h3>
+          <p class="feature-card-desc">
+            Intuitive design that makes trading easy for everyone. Lorem ipsum dolor sit amet
+          </p>
+          <div class="card-hover-indicator"></div>
+        </div>
+
+        <!-- Card 4: Diverse Assets -->
+        <div class="feature-card" data-card="4">
+          <div class="feature-icon-wrapper">
+            <div class="icon-circle-bg"></div>
+            <svg class="feature-svg" viewBox="0 0 64 64" fill="none">
+              <!-- Open Hand cupping assets -->
+              <path d="M 12 44 Q 22 46 32 38 L 48 34 C 52 33 55 35 53 38 Q 45 46 36 49 L 24 53 Z" stroke="#2563EB" stroke-width="2.2" fill="rgba(37,99,235,0.06)"/>
+              <path d="M 20 40 L 32 32 Q 40 28 46 30" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+              <!-- Floating Asset Gear with Currency $ -->
+              <circle cx="34" cy="20" r="10" stroke="#2563EB" stroke-width="2.2" fill="none"/>
+              <path d="M 34 14 V 26 M 31 16 H 37 M 31 24 H 37 M 31 20 H 37" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round"/>
+              <!-- Exchange Arrows (Left & Right) -->
+              <path d="M 14 18 L 18 14 L 14 10" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="18" y1="14" x2="22" y2="14" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+              <path d="M 50 14 L 46 18 L 50 22" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="46" y1="18" x2="42" y2="18" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-card-title">Diverse Assets</h3>
+          <p class="feature-card-desc">
+            Trade a wide variety of cryptocurrencies and stocks from one platform.
+          </p>
+          <div class="card-hover-indicator"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Diverse Assets Section
+       Left: Tag, Heading, Illustration, CTA | Right: Filter Tabs + 9 Crypto Cards
+       ========================================================================= -->
+  <section class="assets-section" id="assets">
+    <div class="container">
+      <div class="assets-grid">
+
+        <!-- Left Column -->
+        <div class="assets-left">
+          <span class="assets-tag">DIVERSE ASSETS</span>
+          <h2 class="assets-title">Trade a Wide Variety of Cryptocurrencies and Stocks from One Platform</h2>
+
+          <!-- Inline SVG Illustration: People analyzing Bitcoin chart -->
+          <div class="assets-illustration">
+            <svg viewBox="0 0 420 280" fill="none" xmlns="http://www.w3.org/2000/svg" class="assets-svg">
+              <!-- Background glow blobs -->
+              <ellipse cx="210" cy="180" rx="175" ry="80" fill="url(#bgGlow)" opacity="0.18"/>
+              <!-- Floor / platform -->
+              <ellipse cx="210" cy="258" rx="160" ry="14" fill="#2563EB" opacity="0.09"/>
+
+              <!-- Large Bitcoin coin (center, 3D style) -->
+              <circle cx="195" cy="145" r="68" fill="url(#btcGrad)" opacity="0.95"/>
+              <circle cx="195" cy="145" r="56" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+              <!-- BTC symbol -->
+              <text x="195" y="162" text-anchor="middle" fill="#fff" font-size="52" font-weight="800" font-family="Arial" opacity="0.95">â‚¿</text>
+              <!-- Coin edge highlight -->
+              <path d="M137 108 Q148 85 175 80" stroke="rgba(255,255,255,0.45)" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+              <!-- Chart line going up behind coin -->
+              <polyline points="30,230 65,195 100,208 135,170 165,150 200,120 240,100 285,82 330,95 390,55"
+                stroke="#2563EB" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Chart fill under line -->
+              <polygon points="30,230 65,195 100,208 135,170 165,150 200,120 240,100 285,82 330,95 390,55 390,245 30,245"
+                fill="url(#chartFill)" opacity="0.22"/>
+              <!-- Chart dots -->
+              <circle cx="135" cy="170" r="5" fill="#2563EB"/>
+              <circle cx="240" cy="100" r="5" fill="#2563EB"/>
+              <circle cx="390" cy="55" r="6" fill="#10B981"/>
+
+              <!-- Person 1: Standing left, pointing at chart -->
+              <circle cx="62" cy="118" r="16" fill="#2563EB" opacity="0.9"/>
+              <path d="M62 134 Q48 155 46 185" stroke="#2563EB" stroke-width="8" stroke-linecap="round" fill="none"/>
+              <path d="M46 185 Q42 210 44 230" stroke="#1D4ED8" stroke-width="7.5" stroke-linecap="round" fill="none"/>
+              <path d="M46 185 Q28 200 24 215" stroke="#1D4ED8" stroke-width="7" stroke-linecap="round" fill="none"/>
+              <path d="M62 134 Q76 148 92 138" stroke="#2563EB" stroke-width="7.5" stroke-linecap="round" fill="none"/>
+              <circle cx="94" cy="137" r="5" fill="#2563EB"/>
+              <!-- Hair -->
+              <path d="M50 110 Q52 100 62 98 Q72 100 74 110" fill="#1E3A8A" stroke="none"/>
+
+              <!-- Person 2: Standing right, clipboard -->
+              <circle cx="346" cy="112" r="16" fill="#2563EB" opacity="0.9"/>
+              <path d="M346 128 Q360 150 362 180" stroke="#2563EB" stroke-width="8" stroke-linecap="round" fill="none"/>
+              <path d="M362 180 Q368 205 366 228" stroke="#1D4ED8" stroke-width="7.5" stroke-linecap="round" fill="none"/>
+              <path d="M362 180 Q382 192 390 208" stroke="#1D4ED8" stroke-width="7" stroke-linecap="round" fill="none"/>
+              <path d="M346 128 Q332 142 318 134" stroke="#2563EB" stroke-width="7.5" stroke-linecap="round" fill="none"/>
+              <!-- Tablet in hand -->
+              <rect x="302" y="130" width="22" height="28" rx="3" fill="white" stroke="#2563EB" stroke-width="2"/>
+              <line x1="306" y1="136" x2="320" y2="136" stroke="#93C5FD" stroke-width="1.5"/>
+              <line x1="306" y1="140" x2="320" y2="140" stroke="#93C5FD" stroke-width="1.5"/>
+              <line x1="306" y1="144" x2="316" y2="144" stroke="#10B981" stroke-width="1.5"/>
+              <!-- Hair -->
+              <path d="M334 104 Q336 94 346 92 Q356 94 358 104" fill="#1E3A8A" stroke="none"/>
+
+              <!-- Floating stat cards -->
+              <rect x="8" y="45" width="88" height="38" rx="10" fill="white" filter="url(#cardShadow)"/>
+              <text x="20" y="62" fill="#10B981" font-size="10" font-weight="700" font-family="Arial">â†‘ BTC</text>
+              <text x="20" y="76" fill="#111827" font-size="11" font-weight="800" font-family="Arial">+3.4%</text>
+
+              <rect x="318" y="30" width="96" height="38" rx="10" fill="white" filter="url(#cardShadow)"/>
+              <text x="330" y="47" fill="#2563EB" font-size="10" font-weight="700" font-family="Arial">Market Cap</text>
+              <text x="330" y="61" fill="#111827" font-size="11" font-weight="800" font-family="Arial">$2.4T</text>
+
+              <defs>
+                <linearGradient id="btcGrad" x1="140" y1="80" x2="250" y2="210" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#3B82F6"/>
+                  <stop offset="100%" stop-color="#1D4ED8"/>
+                </linearGradient>
+                <linearGradient id="chartFill" x1="210" y1="55" x2="210" y2="245" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#DBEAFE"/>
+                  <stop offset="100%" stop-color="#EFF6FF"/>
+                </linearGradient>
+                <filter id="cardShadow" x="-10%" y="-10%" width="130%" height="140%">
+                  <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="rgba(37,99,235,0.14)"/>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+
+          <a href="404.html" class="btn-see-assets">
+            See More Assets
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Right Column: Filter Tabs + Asset Cards Grid -->
+        <div class="assets-right">
+
+          <!-- Filter Tabs -->
+          <div class="asset-filter-tabs">
+            <button class="asset-tab active" data-tab="tradable">Tradable</button>
+            <button class="asset-tab" data-tab="gainers">Top Gainers</button>
+            <button class="asset-tab" data-tab="losers">Today's Loser</button>
+          </div>
+
+          <!-- Asset Cards Grid -->
+          <div class="asset-cards-grid" id="assetCardsGrid">
+
+            <!-- BNB -->
+            <div class="asset-card" data-category="tradable losers">
+              <div class="asset-coin-icon" style="background:linear-gradient(135deg,#F3BA2F,#E5A800);">
+                <svg viewBox="0 0 32 32" fill="none"><path d="M16 6l3.5 3.5-3.5 3.5-3.5-3.5L16 6zm7 7l3.5 3.5-3.5 3.5-3.5-3.5L23 13zm-14 0l3.5 3.5-3.5 3.5-3.5-3.5L9 13zm7 7l3.5 3.5-3.5 3.5-3.5-3.5L16 20z" fill="white"/></svg>
+              </div>
+              <div class="asset-info">
+                <span class="asset-name">BNB</span>
+                <span class="asset-price">USD 45,893.35</span>
+              </div>
+              <div class="asset-change negative">
+                <svg viewBox="0 0 12 12"><path d="M6 2v8M2 7l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+                0.8%
+              </div>
+            </div>
+
+            <!-- Bitcoin -->
+            <div class="asset-card" data-category="tradable gainers">
+              <div class="asset-coin-icon" style="background:linear-gradient(135deg,#F7931A,#E07B00);">
+                <svg viewBox="0 0 32 32" fill="none"><text x="6" y="23" fill="white" font-size="20" font-weight="800" font-family="Arial">â‚¿</text></svg>
+              </div>
+              <div class="asset-info">
+                <span class="asset-name">Bitcoin</span>
+                <span class="asset-price">USD 78,896.87</span>
+              </div>
+              <div class="asset-change positive">
+                <svg viewBox="0 0 12 12"><path d="M6 10V2M2 5l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+                3.4%
+              </div>
+            </div>
+
+            <!-- Ethereum -->
+            <div class="asset-card" data-category="tradable gainers">
+              <div class="asset-coin-icon" style="background:linear-gradient(135deg,#627EEA,#3C5BD4);">
+                <svg viewBox="0 0 32 32" fill="none"><path d="M16 5l-8 11 8 4.5L24 16 16 5zm0 17l-8-4.7 8 9.7 8-9.7L16 22z" fill="white" opacity="0.9"/></svg>
+              </div>
+              <div class="asset-info">
+                <span class="asset-name">Ethereum</span>
+                <span class="asset-price">USD 12,567.76</span>
+              </div>
+              <div class="asset-change positive">
+                <svg viewBox="0 0 12 12"><path d="M6 10V2M2 5l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+                2.3%
+              </div>
+            </div>
+
+            <!-- Tether -->
+            <div class="asset-card" data-category="tradable losers">
+              <div class="asset-coin-icon" style="background:linear-gradient(135deg,#26A17B,#1A7A5C);">
+                <svg viewBox="0 0 32 32" fill="none"><text x="9" y="22" fill="white" font-size="18" font-weight="900" font-family="Arial">â‚®</text></svg>
+              </div>
+              <div class="asset-info">
+                <span class="asset-name">Tether</span>
+                <span class="asset-price">USD 56,756.65</span>
+              </div>
+              <div class="asset-change negative">
+                <svg viewBox="0 0 12 12"><path d="M6 2v8M2 7l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+                1.7%
+              </div>
+            </div>
+
+            <!-- Solana -->
+            <div class="asset-card" data-category="tradable gainers">
+              <div class="asset-coin-icon" style="background:linear-gradient(135deg,#9945FF,#7320E0);">
+                <svg viewBox="0 0 32 32" fill="none"><path d="M6 11h16l4 3-4 3H6l-4-3 4-3zM6 18h14l4 3H6v-3z" fill="white" opacity="0.9"/></svg>
+              </div>
+              <div class="asset-info">
+                <span class="asset-name">Solana</span>
+                <span class="asset-price">USD 43,341.92</span>
+              </div>
+              <div class="asset-change positive">
+                <svg viewBox="0 0 12 12"><path d="M6 10V2M2 5l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+                4.6%
+              </div>
+            </div>
+
+            <!-- Polkadot -->
+            <div class="asset-card" data-category="tradable gainers">
+              <div class="asset-coin-icon" style="background:linear-gradient(135deg,#E6007A,#B30060);">
+                <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="10" r="4" fill="white"/><circle cx="10" cy="20" r="3" fill="white" opacity="0.8"/><circle cx="22" cy="20" r="3" fill="white" opacity="0.8"/><circle cx="16" cy="24" r="2.5" fill="white" opacity="0.6"/></svg>
+              </div>
+              <div class="asset-info">
+                <span class="asset-name">Polkadot</span>
+                <span class="asset-price">USD 7,634.39</span>
+              </div>
+              <div class="asset-change positive">
+                <svg viewBox="0 0 12 12"><path d="M6 10V2M2 5l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+                5.2%
+              </div>
+            </div>
+
+            <!-- Litecoin -->
+            <div class="asset-card" data-category="tradable losers">
+              <div class="asset-coin-icon" style="background:linear-gradient(135deg,#BFBBBB,#A0A0A0);">
+                <svg viewBox="0 0 32 32" fill="none"><text x="9" y="23" fill="white" font-size="20" font-weight="800" font-family="Arial">Å</text></svg>
+              </div>
+              <div class="asset-info">
+                <span class="asset-name">Litecoin</span>
+                <span class="asset-price">USD 9,842.56</span>
+              </div>
+              <div class="asset-change negative">
+                <svg viewBox="0 0 12 12"><path d="M6 2v8M2 7l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+                2.5%
+              </div>
+            </div>
+
+            <!-- XRP -->
+            <div class="asset-card" data-category="tradable losers">
+              <div class="asset-coin-icon" style="background:linear-gradient(135deg,#2B6ED0,#1A4BA0);">
+                <svg viewBox="0 0 32 32" fill="none"><path d="M8 8l4 4-4 4M24 8l-4 4 4 4M12 12h8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="asset-info">
+                <span class="asset-name">XRP</span>
+                <span class="asset-price">USD 1,243.23</span>
+              </div>
+              <div class="asset-change negative">
+                <svg viewBox="0 0 12 12"><path d="M6 2v8M2 7l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+                5.6%
+              </div>
+            </div>
+
+            <!-- Cosmos -->
+            <div class="asset-card" data-category="tradable gainers">
+              <div class="asset-coin-icon" style="background:linear-gradient(135deg,#2E3148,#1A1D32);">
+                <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="4" fill="white"/><ellipse cx="16" cy="16" rx="12" ry="5" stroke="white" stroke-width="1.8" fill="none"/><ellipse cx="16" cy="16" rx="12" ry="5" stroke="white" stroke-width="1.8" fill="none" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="12" ry="5" stroke="white" stroke-width="1.8" fill="none" transform="rotate(120 16 16)"/></svg>
+              </div>
+              <div class="asset-info">
+                <span class="asset-name">Cosmos</span>
+                <span class="asset-price">USD 9,345.77</span>
+              </div>
+              <div class="asset-change positive">
+                <svg viewBox="0 0 12 12"><path d="M6 10V2M2 5l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+                1.8%
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Stats Counter Section
+       4 animated counting stats: Trade Volume, All Time Trades, Delegates, Integrations
+       ========================================================================= -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item" data-target="560" data-suffix="M+" data-prefix="$">
+          <div class="stat-number-wrap">
+            <span class="stat-prefix">$</span><span class="stat-number">0</span><span class="stat-suffix">M+</span>
+          </div>
+          <span class="stat-label">Trade Volume</span>
+          <div class="stat-bar"><div class="stat-bar-fill"></div></div>
+        </div>
+
+        <div class="stat-item" data-target="87" data-suffix="M+">
+          <div class="stat-number-wrap">
+            <span class="stat-number">0</span><span class="stat-suffix">M+</span>
+          </div>
+          <span class="stat-label">All Time Trades</span>
+          <div class="stat-bar"><div class="stat-bar-fill"></div></div>
+        </div>
+
+        <div class="stat-item" data-target="6500" data-suffix="+">
+          <div class="stat-number-wrap">
+            <span class="stat-number">0</span><span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Community Delegates</span>
+          <div class="stat-bar"><div class="stat-bar-fill"></div></div>
+        </div>
+
+        <div class="stat-item" data-target="4500" data-suffix="+">
+          <div class="stat-number-wrap">
+            <span class="stat-number">0</span><span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Integrations</span>
+          <div class="stat-bar"><div class="stat-bar-fill"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Transfer Steps Section
+       Left: 3D Isometric Wallet/Money Illustration | Right: 3 Steps + CTA
+       ========================================================================= -->
+  <section class="transfer-section" id="transfer">
+    <div class="container">
+      <div class="transfer-grid">
+
+        <!-- Left: Animated 3D Isometric SVG Illustration -->
+        <div class="transfer-illustration">
+          <div class="transfer-svg-wrap">
+            <svg viewBox="0 0 500 420" fill="none" xmlns="http://www.w3.org/2000/svg" class="transfer-svg">
+
+              <!-- === PLATFORM / BASE === -->
+              <!-- Isometric platform top -->
+              <polygon points="250,310 370,250 370,275 250,335 130,275 130,250" fill="#E8ECF8" stroke="#C5CCE8" stroke-width="1"/>
+              <!-- Left face -->
+              <polygon points="130,250 250,310 250,335 130,275" fill="#C8CEED" stroke="#B0B8E0" stroke-width="1"/>
+              <!-- Right face -->
+              <polygon points="370,250 250,310 250,335 370,275" fill="#D8DCF0" stroke="#B8C0E8" stroke-width="1"/>
+
+              <!-- GEAR 1 (left of platform) -->
+              <g class="gear-spin-1" transform-origin="175 290">
+                <circle cx="175" cy="290" r="16" fill="#D8DCF0" stroke="#B0B8E0" stroke-width="2"/>
+                <circle cx="175" cy="290" r="9" fill="#E8ECF8" stroke="#B0B8E0" stroke-width="1.5"/>
+                <rect x="173" y="273" width="4" height="8" rx="2" fill="#B0B8E0"/>
+                <rect x="173" y="301" width="4" height="8" rx="2" fill="#B0B8E0"/>
+                <rect x="158" y="288" width="8" height="4" rx="2" fill="#B0B8E0"/>
+                <rect x="184" y="288" width="8" height="4" rx="2" fill="#B0B8E0"/>
+                <rect x="162" y="277" width="6" height="4" rx="2" fill="#B0B8E0" transform="rotate(45 165 279)"/>
+                <rect x="183" y="299" width="6" height="4" rx="2" fill="#B0B8E0" transform="rotate(45 186 301)"/>
+                <rect x="183" y="277" width="6" height="4" rx="2" fill="#B0B8E0" transform="rotate(-45 186 279)"/>
+                <rect x="162" y="299" width="6" height="4" rx="2" fill="#B0B8E0" transform="rotate(-45 165 301)"/>
+              </g>
+
+              <!-- GEAR 2 (right of platform) -->
+              <g class="gear-spin-2" transform-origin="325 290">
+                <circle cx="325" cy="290" r="12" fill="#D8DCF0" stroke="#B0B8E0" stroke-width="1.5"/>
+                <circle cx="325" cy="290" r="6" fill="#E8ECF8" stroke="#B0B8E0" stroke-width="1"/>
+                <rect x="323" y="277" width="4" height="6" rx="2" fill="#B0B8E0"/>
+                <rect x="323" y="301" width="4" height="6" rx="2" fill="#B0B8E0"/>
+                <rect x="313" y="288" width="6" height="4" rx="2" fill="#B0B8E0"/>
+                <rect x="331" y="288" width="6" height="4" rx="2" fill="#B0B8E0"/>
+              </g>
+
+              <!-- KEY (right platform) -->
+              <g class="key-wobble" transform-origin="310 268">
+                <circle cx="310" cy="262" r="10" fill="none" stroke="#B0B8E0" stroke-width="2.5"/>
+                <line x1="316" y1="268" x2="332" y2="284" stroke="#B0B8E0" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="328" y1="284" x2="328" y2="290" stroke="#B0B8E0" stroke-width="2" stroke-linecap="round"/>
+                <line x1="332" y1="284" x2="332" y2="290" stroke="#B0B8E0" stroke-width="2" stroke-linecap="round"/>
+              </g>
+
+              <!-- SHIELD (center platform) -->
+              <g class="shield-pulse" transform-origin="250 270">
+                <path d="M250,245 L270,255 L270,275 Q270,290 250,298 Q230,290 230,275 L230,255 Z" fill="url(#shieldGrad)" stroke="none"/>
+                <path d="M242,272 L248,278 L260,264" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </g>
+
+              <!-- ISOMETRIC WALLET (far left, big) -->
+              <g class="wallet-bounce" transform-origin="130 220">
+                <!-- Wallet body top -->
+                <polygon points="90,185 155,148 190,168 125,205" fill="url(#walletTop)"/>
+                <!-- Wallet body left face -->
+                <polygon points="90,185 90,235 125,255 125,205" fill="url(#walletLeft)"/>
+                <!-- Wallet body right face -->
+                <polygon points="155,148 190,168 190,218 125,205 125,255 90,235 90,185" fill="url(#walletRight)"/>
+                <!-- Wallet flap top -->
+                <polygon points="90,165 155,128 190,148 125,185" fill="#4B7FED" opacity="0.9"/>
+                <!-- Wallet flap left -->
+                <polygon points="90,165 90,185 125,205 125,185" fill="#2563EB" opacity="0.85"/>
+                <!-- Green cash bills sticking out of wallet -->
+                <polygon points="110,152 148,130 160,140 122,162" fill="#34D399" opacity="0.9"/>
+                <polygon points="105,160 143,138 148,148 110,170" fill="#10B981" opacity="0.85"/>
+                <!-- Dollar sign on wallet -->
+                <text x="148" y="195" fill="white" font-size="22" font-weight="900" font-family="Arial" opacity="0.9">$</text>
+              </g>
+
+              <!-- PHONE (top center-right, isometric) -->
+              <g class="phone-float" transform-origin="300 160">
+                <!-- Phone body -->
+                <polygon points="275,100 315,78 345,95 305,117" fill="#EFF6FF"/>
+                <polygon points="275,100 275,185 305,202 305,117" fill="#DBEAFE"/>
+                <polygon points="315,78 345,95 345,180 305,202 305,117" fill="url(#phoneBodyGrad)"/>
+                <!-- Phone screen -->
+                <polygon points="282,108 310,93 336,107 308,122" fill="url(#phoneScreenGrad)"/>
+                <polygon points="282,108 282,172 308,187 308,122" fill="#2563EB" opacity="0.7"/>
+                <polygon points="310,93 336,107 336,172 308,187 308,122" fill="#1D4ED8" opacity="0.8"/>
+                <!-- Dollar symbol on screen -->
+                <text x="302" y="145" fill="white" font-size="26" font-weight="900" font-family="Arial">$</text>
+                <!-- Down arrow on phone screen -->
+                <polygon points="308,162 318,152 328,162 322,162 322,172 314,172 314,162" fill="white" opacity="0.9"/>
+                <!-- Notch -->
+                <rect x="305" y="84" width="12" height="4" rx="2" fill="#93C5FD"/>
+              </g>
+
+              <!-- FLYING MONEY BILLS (animated) -->
+              <!-- Bill 1 -->
+              <g class="money-fly-1" transform-origin="200 150">
+                <rect x="175" y="135" width="50" height="30" rx="4" fill="#34D399" opacity="0.92"/>
+                <rect x="180" y="140" width="40" height="20" rx="2" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                <text x="195" y="156" fill="white" font-size="13" font-weight="800" font-family="Arial">$</text>
+              </g>
+              <!-- Bill 2 -->
+              <g class="money-fly-2" transform-origin="230 95">
+                <rect x="205" y="82" width="50" height="28" rx="4" fill="#6EE7B7" opacity="0.88"/>
+                <text x="225" y="102" fill="white" font-size="12" font-weight="800" font-family="Arial">$</text>
+              </g>
+              <!-- Bill 3 (rotated) -->
+              <g class="money-fly-3" transform-origin="165 110">
+                <rect x="140" y="98" width="50" height="28" rx="4" fill="#34D399" opacity="0.82" transform="rotate(-18 165 112)"/>
+                <text x="157" y="116" fill="white" font-size="12" font-weight="800" font-family="Arial" transform="rotate(-18 165 112)">$</text>
+              </g>
+
+              <!-- COINS (floating) -->
+              <g class="coin-float-1" transform-origin="215 185">
+                <circle cx="215" cy="185" r="16" fill="url(#coinGrad1)"/>
+                <circle cx="215" cy="185" r="11" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                <text x="210" y="190" fill="white" font-size="12" font-weight="900" font-family="Arial">$</text>
+              </g>
+              <g class="coin-float-2" transform-origin="175 215">
+                <circle cx="175" cy="215" r="13" fill="url(#coinGrad2)"/>
+                <text x="170" y="220" fill="white" font-size="11" font-weight="900" font-family="Arial">$</text>
+              </g>
+              <g class="coin-float-3" transform-origin="250 130">
+                <circle cx="250" cy="130" r="11" fill="url(#coinGrad1)"/>
+                <text x="246" y="135" fill="white" font-size="10" font-weight="900" font-family="Arial">$</text>
+              </g>
+              <g class="coin-float-4" transform-origin="155 160">
+                <circle cx="155" cy="160" r="10" fill="url(#coinGrad2)"/>
+                <text x="151" y="165" fill="white" font-size="9" font-weight="900" font-family="Arial">$</text>
+              </g>
+
+              <!-- CASH STACKS (bottom right of platform) -->
+              <g class="cash-stack" transform-origin="300 310">
+                <!-- Stack 1 -->
+                <rect x="275" y="295" width="52" height="14" rx="4" fill="#34D399" opacity="0.95"/>
+                <rect x="278" y="302" width="46" height="10" rx="3" fill="#10B981"/>
+                <!-- Stack 2 -->
+                <rect x="278" y="310" width="48" height="13" rx="4" fill="#34D399" opacity="0.88"/>
+                <text x="285" y="308" fill="white" font-size="9" font-weight="700" font-family="Arial">$$$</text>
+              </g>
+              <!-- Coins on cash stack -->
+              <g class="coin-on-stack" transform-origin="340 295">
+                <ellipse cx="340" cy="295" rx="12" ry="5" fill="#F59E0B"/>
+                <ellipse cx="340" cy="291" rx="12" ry="5" fill="#FBBF24"/>
+                <ellipse cx="340" cy="287" rx="12" ry="5" fill="#F59E0B"/>
+                <ellipse cx="340" cy="283" rx="12" ry="5" fill="#FCD34D"/>
+                <text x="336" y="289" fill="white" font-size="8" font-weight="900" font-family="Arial">$</text>
+              </g>
+
+              <!-- SPARKLES / DOTS -->
+              <circle cx="350" cy="130" r="4" fill="#2563EB" class="sparkle-1" opacity="0.7"/>
+              <circle cx="140" cy="200" r="3" fill="#34D399" class="sparkle-2" opacity="0.6"/>
+              <circle cx="380" cy="200" r="3" fill="#2563EB" class="sparkle-3" opacity="0.6"/>
+              <circle cx="200" cy="68" r="3" fill="#F59E0B" class="sparkle-4" opacity="0.7"/>
+
+              <defs>
+                <linearGradient id="walletTop" x1="90" y1="185" x2="190" y2="148" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#3B82F6"/>
+                  <stop offset="100%" stop-color="#2563EB"/>
+                </linearGradient>
+                <linearGradient id="walletLeft" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#1D4ED8"/>
+                  <stop offset="100%" stop-color="#2563EB"/>
+                </linearGradient>
+                <linearGradient id="walletRight" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#1E40AF"/>
+                  <stop offset="100%" stop-color="#1D4ED8"/>
+                </linearGradient>
+                <linearGradient id="phoneBodyGrad" x1="315" y1="78" x2="345" y2="180" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#DBEAFE"/>
+                  <stop offset="100%" stop-color="#BFDBFE"/>
+                </linearGradient>
+                <linearGradient id="phoneScreenGrad" x1="282" y1="108" x2="336" y2="122" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#3B82F6"/>
+                  <stop offset="100%" stop-color="#1D4ED8"/>
+                </linearGradient>
+                <linearGradient id="shieldGrad" x1="230" y1="245" x2="270" y2="298" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#EC4899"/>
+                  <stop offset="100%" stop-color="#F43F5E"/>
+                </linearGradient>
+                <radialGradient id="coinGrad1" cx="40%" cy="35%">
+                  <stop offset="0%" stop-color="#FCD34D"/>
+                  <stop offset="100%" stop-color="#F59E0B"/>
+                </radialGradient>
+                <radialGradient id="coinGrad2" cx="40%" cy="35%">
+                  <stop offset="0%" stop-color="#FDE68A"/>
+                  <stop offset="100%" stop-color="#D97706"/>
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Right: Steps Content -->
+        <div class="transfer-content">
+          <h2 class="transfer-title">Transfer money in<br><span class="transfer-title-highlight">3 easy steps</span></h2>
+
+          <div class="transfer-steps">
+
+            <div class="transfer-step" data-step="1">
+              <div class="step-number">1</div>
+              <div class="step-body">
+                <h3 class="step-title">Link Your Bank Account</h3>
+                <p class="step-desc">Securely connect your bank account to your Stackly wallet.</p>
+              </div>
+              <div class="step-line"></div>
+            </div>
+
+            <div class="transfer-step" data-step="2">
+              <div class="step-number">2</div>
+              <div class="step-body">
+                <h3 class="step-title">Enter Transfer Details</h3>
+                <p class="step-desc">Specify the amount and recipient for your transfer.</p>
+              </div>
+              <div class="step-line"></div>
+            </div>
+
+            <div class="transfer-step" data-step="3">
+              <div class="step-number">3</div>
+              <div class="step-body">
+                <h3 class="step-title">Confirm and Send</h3>
+                <p class="step-desc">Review the details and confirm the transfer instantly.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="404.html" class="btn-transfer">
+            Transfer Money Now
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Stay Ahead Section
+       Tag + centered heading + 4 feature cards in 2x2 grid (photo left + text right)
+       ========================================================================= -->
+  <section class="ahead-section" id="about">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="ahead-header">
+        <span class="ahead-tag">TRADE BETTER WITH STACKLY</span>
+        <h2 class="ahead-title">Stay Ahead of the Market with<br><span class="ahead-title-blue">Instant Data and Execution</span></h2>
+      </div>
+
+      <!-- 4 Feature Cards â€” 2Ã—2 Grid -->
+      <div class="ahead-cards">
+
+        <!-- Card 1: Security -->
+        <div class="ahead-card" data-card="security">
+          <div class="ahead-card-photo">
+            <img src="assets/images/feature-security.webp" alt="Robust Security Measures" class="ahead-photo-img" loading="lazy">
+            <div class="ahead-photo-overlay"></div>
+          </div>
+          <div class="ahead-card-content">
+            <div class="ahead-icon-wrap">
+              <svg viewBox="0 0 56 56" fill="none" class="ahead-icon-svg">
+                <path d="M28 8 L44 15 L44 30 Q44 42 28 48 Q12 42 12 30 L12 15 Z" stroke="#2563EB" stroke-width="2.2" fill="rgba(37,99,235,0.08)" stroke-linejoin="round"/>
+                <rect x="22" y="27" width="12" height="10" rx="2" stroke="#2563EB" stroke-width="1.8" fill="none"/>
+                <path d="M24 27 Q24 22 28 22 Q32 22 32 27" stroke="#2563EB" stroke-width="1.8" fill="none"/>
+                <circle cx="28" cy="31.5" r="2" fill="#2563EB"/>
+              </svg>
+            </div>
+            <h3 class="ahead-card-title">Robust Security Measures</h3>
+            <p class="ahead-card-desc">Your assets are shielded by top-tier security protocols, providing peace of mind in every transaction.</p>
+            <a href="404.html" class="ahead-card-link">
+              Learn more
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Market Analysis -->
+        <div class="ahead-card" data-card="analysis">
+          <div class="ahead-card-photo">
+            <img src="assets/images/feature-analysis.webp" alt="In-Depth Market Analysis" class="ahead-photo-img" loading="lazy">
+            <div class="ahead-photo-overlay"></div>
+          </div>
+          <div class="ahead-card-content">
+            <div class="ahead-icon-wrap">
+              <svg viewBox="0 0 56 56" fill="none" class="ahead-icon-svg">
+                <rect x="8" y="30" width="8" height="18" rx="2" stroke="#2563EB" stroke-width="2" fill="rgba(37,99,235,0.1)"/>
+                <rect x="20" y="22" width="8" height="26" rx="2" stroke="#2563EB" stroke-width="2" fill="rgba(37,99,235,0.1)"/>
+                <rect x="32" y="14" width="8" height="34" rx="2" stroke="#2563EB" stroke-width="2" fill="rgba(37,99,235,0.1)"/>
+                <polyline points="12,32 24,24 36,16" stroke="#2563EB" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="44" cy="16" r="8" stroke="#2563EB" stroke-width="2.2" fill="rgba(37,99,235,0.07)"/>
+                <line x1="50" y1="22" x2="55" y2="27" stroke="#2563EB" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M41 16 L44 19 L48 13" stroke="#2563EB" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="ahead-card-title">In-Depth Market Analysis</h3>
+            <p class="ahead-card-desc">Access detailed charts, historical data, and analytical tools to make informed trading decisions.</p>
+            <a href="404.html" class="ahead-card-link">
+              Learn more
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Social Trading Community -->
+        <div class="ahead-card" data-card="community">
+          <div class="ahead-card-photo">
+            <img src="assets/images/feature-community.webp" alt="Social Trading Community" class="ahead-photo-img" loading="lazy">
+            <div class="ahead-photo-overlay"></div>
+          </div>
+          <div class="ahead-card-content">
+            <div class="ahead-icon-wrap">
+              <svg viewBox="0 0 56 56" fill="none" class="ahead-icon-svg">
+                <!-- Book/community icon with circular arrows -->
+                <circle cx="28" cy="28" r="16" stroke="#2563EB" stroke-width="2.2" fill="rgba(37,99,235,0.07)"/>
+                <!-- People icons inside -->
+                <circle cx="22" cy="24" r="4" stroke="#2563EB" stroke-width="1.8" fill="none"/>
+                <path d="M15 34 Q15 29 22 29 Q29 29 29 34" stroke="#2563EB" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                <circle cx="34" cy="24" r="3.5" stroke="#2563EB" stroke-width="1.6" fill="none"/>
+                <path d="M28 34 Q29 31 34 31 Q39 31 40 34" stroke="#2563EB" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                <!-- Circular arrows (refresh/community) -->
+                <path d="M28 10 Q38 10 42 18" stroke="#2563EB" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr1)"/>
+                <path d="M28 46 Q18 46 14 38" stroke="#2563EB" stroke-width="2" stroke-linecap="round" fill="none"/>
+                <polygon points="40,14 44,20 46,14" fill="#2563EB"/>
+                <polygon points="16,42 12,36 10,42" fill="#2563EB"/>
+              </svg>
+            </div>
+            <h3 class="ahead-card-title">Social Trading Community</h3>
+            <p class="ahead-card-desc">Engage with a vibrant community of traders, share strategies, and gain insights from peers.</p>
+            <a href="404.html" class="ahead-card-link">
+              Learn more
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: 24/7 Customer Support -->
+        <div class="ahead-card" data-card="support">
+          <div class="ahead-card-photo">
+            <img src="assets/images/feature-support.webp" alt="24/7 Customer Support" class="ahead-photo-img" loading="lazy">
+            <div class="ahead-photo-overlay"></div>
+          </div>
+          <div class="ahead-card-content">
+            <div class="ahead-icon-wrap">
+              <svg viewBox="0 0 56 56" fill="none" class="ahead-icon-svg">
+                <!-- Headset -->
+                <path d="M14 28 Q14 16 28 16 Q42 16 42 28" stroke="#2563EB" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+                <!-- Left ear cup -->
+                <rect x="10" y="27" width="8" height="12" rx="4" stroke="#2563EB" stroke-width="2" fill="rgba(37,99,235,0.1)"/>
+                <!-- Right ear cup -->
+                <rect x="38" y="27" width="8" height="12" rx="4" stroke="#2563EB" stroke-width="2" fill="rgba(37,99,235,0.1)"/>
+                <!-- Mic arm -->
+                <path d="M18 39 Q18 44 24 44 L30 44" stroke="#2563EB" stroke-width="2" stroke-linecap="round" fill="none"/>
+                <circle cx="31" cy="44" r="2.5" stroke="#2563EB" stroke-width="1.8" fill="rgba(37,99,235,0.1)"/>
+                <!-- Chat bubbles -->
+                <rect x="30" y="8" width="18" height="12" rx="4" stroke="#2563EB" stroke-width="1.8" fill="rgba(37,99,235,0.07)"/>
+                <line x1="34" y1="12" x2="44" y2="12" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="34" y1="15" x2="40" y2="15" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+                <polygon points="30,20 34,16 34,20" fill="#2563EB" opacity="0.7"/>
+              </svg>
+            </div>
+            <h3 class="ahead-card-title">24/7 Customer Support</h3>
+            <p class="ahead-card-desc">Our dedicated support team is available around the clock to help you with any questions or issues.</p>
+            <a href="404.html" class="ahead-card-link">
+              Learn more
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Expert Advice Section
+       Left: Heading + 3 checkmark bullet points | Right: 2-person illustration
+       ========================================================================= -->
+  <section class="advice-section" id="advice">
+    <div class="container">
+      <div class="advice-grid">
+
+        <!-- Left Column: Text Content -->
+        <div class="advice-left">
+          <h2 class="advice-title">Advice by experts on Stocks, Futures, and Options</h2>
+
+          <ul class="advice-list">
+
+            <li class="advice-item" data-advice="1">
+              <div class="advice-check">
+                <svg viewBox="0 0 20 20" fill="none">
+                  <path d="M5 10.5l4 4 6-7" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="advice-text">
+                <h3 class="advice-item-title">Diversify Your Portfolio</h3>
+                <p class="advice-item-desc">Don't put all your eggs in one basket. Diversifying across different sectors and industries can help mitigate risk.</p>
+              </div>
+            </li>
+
+            <li class="advice-item" data-advice="2">
+              <div class="advice-check">
+                <svg viewBox="0 0 20 20" fill="none">
+                  <path d="M5 10.5l4 4 6-7" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="advice-text">
+                <h3 class="advice-item-title">Understand the Market</h3>
+                <p class="advice-item-desc">Futures trading involves speculating on the direction of commodity or financial instrument prices. Make sure you understand the underlying asset.</p>
+              </div>
+            </li>
+
+            <li class="advice-item" data-advice="3">
+              <div class="advice-check">
+                <svg viewBox="0 0 20 20" fill="none">
+                  <path d="M5 10.5l4 4 6-7" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="advice-text">
+                <h3 class="advice-item-title">Monitor Implied Volatility</h3>
+                <p class="advice-item-desc">Implied volatility affects option prices. Higher volatility can increase option premiums, while lower volatility can decrease them.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Right Column: Illustrated SVG Scene -->
+        <div class="advice-right">
+          <div class="advice-illustration">
+            <svg viewBox="0 0 540 440" fill="none" xmlns="http://www.w3.org/2000/svg" class="advice-svg">
+
+              <!-- === BACKGROUND BLOB === -->
+              <ellipse cx="340" cy="260" rx="175" ry="145" fill="#E8F0FB" opacity="0.7"/>
+              <ellipse cx="380" cy="300" rx="130" ry="100" fill="#D6E6F9" opacity="0.5"/>
+
+              <!-- === BACKGROUND CHART BARS (like office window scene) === -->
+              <rect x="400" y="200" width="18" height="80" rx="4" fill="#BFDBFE" opacity="0.5"/>
+              <rect x="425" y="220" width="18" height="60" rx="4" fill="#93C5FD" opacity="0.5"/>
+              <rect x="450" y="185" width="18" height="95" rx="4" fill="#BFDBFE" opacity="0.5"/>
+              <rect x="475" y="210" width="18" height="70" rx="4" fill="#93C5FD" opacity="0.5"/>
+              <!-- Chart line over bars -->
+              <polyline points="400,230 425,215 450,200 475,218 500,205" stroke="#2563EB" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+
+              <!-- === PLANT (bottom right) === -->
+              <g class="plant-sway">
+                <!-- Pot -->
+                <rect x="470" y="355" width="40" height="30" rx="4" fill="#BFDBFE"/>
+                <rect x="474" y="350" width="32" height="10" rx="3" fill="#93C5FD"/>
+                <!-- Soil -->
+                <ellipse cx="490" cy="358" rx="16" ry="5" fill="#6B4B2B" opacity="0.5"/>
+                <!-- Stem -->
+                <path d="M490 355 Q485 340 475 320 Q468 300 480 285" stroke="#34D399" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <path d="M490 355 Q495 338 505 318 Q512 300 500 285" stroke="#34D399" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <path d="M490 355 Q490 335 490 310" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <!-- Leaves -->
+                <ellipse cx="472" cy="310" rx="18" ry="10" fill="#34D399" opacity="0.9" transform="rotate(-30 472 310)"/>
+                <ellipse cx="508" cy="308" rx="18" ry="10" fill="#10B981" opacity="0.85" transform="rotate(30 508 308)"/>
+                <ellipse cx="490" cy="295" rx="16" ry="9" fill="#34D399" opacity="0.9" transform="rotate(-5 490 295)"/>
+                <!-- Small dots on leaves -->
+                <circle cx="468" cy="308" r="2.5" fill="#6EE7B7"/>
+                <circle cx="510" cy="306" r="2.5" fill="#6EE7B7"/>
+              </g>
+
+              <!-- === GEARS (top right) === -->
+              <g class="adv-gear-big" transform-origin="460 95">
+                <circle cx="460" cy="95" r="32" fill="#DBEAFE" stroke="#93C5FD" stroke-width="2"/>
+                <circle cx="460" cy="95" r="18" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.5"/>
+                <!-- Gear teeth (8 teeth) -->
+                <rect x="457" y="62" width="6" height="12" rx="3" fill="#93C5FD"/>
+                <rect x="457" y="116" width="6" height="12" rx="3" fill="#93C5FD"/>
+                <rect x="427" y="92" width="12" height="6" rx="3" fill="#93C5FD"/>
+                <rect x="481" y="92" width="12" height="6" rx="3" fill="#93C5FD"/>
+                <rect x="436" y="69" width="10" height="6" rx="3" fill="#93C5FD" transform="rotate(45 441 72)"/>
+                <rect x="474" y="112" width="10" height="6" rx="3" fill="#93C5FD" transform="rotate(45 479 115)"/>
+                <rect x="474" y="69" width="10" height="6" rx="3" fill="#93C5FD" transform="rotate(-45 479 72)"/>
+                <rect x="436" y="112" width="10" height="6" rx="3" fill="#93C5FD" transform="rotate(-45 441 115)"/>
+              </g>
+
+              <g class="adv-gear-small" transform-origin="416 125">
+                <circle cx="416" cy="125" r="20" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1.5"/>
+                <circle cx="416" cy="125" r="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1"/>
+                <rect x="413" y="104" width="6" height="9" rx="3" fill="#93C5FD"/>
+                <rect x="413" y="137" width="6" height="9" rx="3" fill="#93C5FD"/>
+                <rect x="396" y="122" width="9" height="6" rx="3" fill="#93C5FD"/>
+                <rect x="427" y="122" width="9" height="6" rx="3" fill="#93C5FD"/>
+              </g>
+
+              <!-- === PUZZLE PIECES (top center-right, floating) === -->
+              <!-- Blue puzzle piece -->
+              <g class="puzzle-blue" transform-origin="315 85">
+                <path d="M290,65 L290,95 Q298,95 298,105 Q298,115 290,115 L290,145 L340,145 L340,115 Q332,115 332,105 Q332,95 340,95 L340,65 Z" fill="#2563EB" opacity="0.9"/>
+                <!-- Puzzle connector bump top -->
+                <path d="M305,65 Q315,55 325,65" fill="#2563EB" stroke="none"/>
+                <!-- Inner highlight -->
+                <rect x="295" y="72" width="38" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+              </g>
+
+              <!-- Red puzzle piece (interlocking) -->
+              <g class="puzzle-red" transform-origin="368 115">
+                <path d="M340,95 L340,125 Q348,125 348,135 Q348,145 340,145 L340,175 L390,175 L390,145 Q382,145 382,135 Q382,125 390,125 L390,95 Z" fill="#EF4444" opacity="0.9"/>
+                <!-- Inner highlight -->
+                <rect x="345" y="102" width="38" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+              </g>
+
+              <!-- === PERSON 1: Seated with laptop === -->
+              <g class="person1-idle" transform-origin="230 300">
+                <!-- Chair / rounded seat -->
+                <ellipse cx="225" cy="330" rx="55" ry="22" fill="#B0B8CC" opacity="0.6"/>
+                <rect x="175" y="295" width="100" height="45" rx="30" fill="#C4CAD8"/>
+                <!-- Chair back -->
+                <rect x="195" y="255" width="60" height="52" rx="20" fill="#D0D6E4"/>
+
+                <!-- Legs -->
+                <rect x="193" y="335" width="14" height="40" rx="7" fill="#1A1A2E"/>
+                <rect x="225" y="335" width="14" height="40" rx="7" fill="#1A1A2E"/>
+                <!-- Shoes (blue) -->
+                <ellipse cx="200" cy="376" rx="16" ry="8" fill="#2563EB"/>
+                <ellipse cx="232" cy="376" rx="16" ry="8" fill="#2563EB"/>
+                <!-- Shoe accent -->
+                <rect x="186" y="372" width="28" height="6" rx="3" fill="#1D4ED8"/>
+                <rect x="218" y="372" width="28" height="6" rx="3" fill="#1D4ED8"/>
+
+                <!-- Body (blue top) -->
+                <rect x="197" y="262" width="62" height="75" rx="22" fill="#2563EB"/>
+                <!-- Sleeve left -->
+                <path d="M197 290 Q180 295 172 310 Q168 320 175 325" stroke="#2563EB" stroke-width="20" stroke-linecap="round" fill="none"/>
+                <!-- Sleeve right -->
+                <path d="M259 290 Q276 295 282 308" stroke="#2563EB" stroke-width="18" stroke-linecap="round" fill="none"/>
+                <!-- White stripe on top -->
+                <rect x="210" y="270" width="36" height="5" rx="2.5" fill="rgba(255,255,255,0.35)"/>
+
+                <!-- Head -->
+                <circle cx="228" cy="248" r="28" fill="#FDDBB4"/>
+                <!-- Hair (reddish/auburn) -->
+                <path d="M202 238 Q204 215 228 213 Q252 215 254 238 Q248 228 228 226 Q208 228 202 238 Z" fill="#C44B2A"/>
+                <!-- Hair sides -->
+                <ellipse cx="202" cy="243" rx="8" ry="12" fill="#C44B2A"/>
+                <!-- Face features -->
+                <ellipse cx="221" cy="250" rx="3" ry="4" fill="#6B3A1F" opacity="0.7"/>
+                <ellipse cx="237" cy="250" rx="3" ry="4" fill="#6B3A1F" opacity="0.7"/>
+                <path d="M222 260 Q228 265 234 260" stroke="#C44B2A" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                <!-- Ear -->
+                <ellipse cx="200" cy="252" rx="5" ry="7" fill="#F5C9A0"/>
+                <ellipse cx="256" cy="252" rx="5" ry="7" fill="#F5C9A0"/>
+
+                <!-- Laptop (on lap) -->
+                <rect x="178" y="310" width="85" height="52" rx="8" fill="#E2E8F0"/>
+                <rect x="183" y="315" width="75" height="42" rx="6" fill="#CBD5E1"/>
+                <!-- Screen content -->
+                <rect x="188" y="320" width="65" height="32" rx="4" fill="#1E293B"/>
+                <!-- Chart on screen -->
+                <polyline points="193,345 203,338 213,342 223,333 233,336 243,328 248,331" stroke="#34D399" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <!-- Red dot on screen -->
+                <circle cx="248" cy="331" r="3" fill="#EF4444"/>
+                <!-- Laptop hinge/base -->
+                <rect x="175" y="358" width="90" height="8" rx="4" fill="#94A3B8"/>
+              </g>
+
+              <!-- === PERSON 2: Standing with laptop === -->
+              <g class="person2-idle" transform-origin="345 290">
+                <!-- Legs -->
+                <rect x="323" y="335" width="16" height="65" rx="8" fill="#1E3A5F"/>
+                <rect x="348" y="335" width="16" height="65" rx="8" fill="#1E3A5F"/>
+                <!-- Shoes (dark) -->
+                <ellipse cx="331" cy="402" rx="20" ry="8" fill="#1A1A2E"/>
+                <ellipse cx="356" cy="402" rx="20" ry="8" fill="#1A1A2E"/>
+                <!-- Pants highlight -->
+                <rect x="325" y="340" width="6" height="50" rx="3" fill="rgba(255,255,255,0.1)"/>
+
+                <!-- Body (grey/white jacket over red shirt) -->
+                <rect x="313" y="250" width="68" height="90" rx="22" fill="#E5E7EB"/>
+                <!-- Red shirt under jacket -->
+                <rect x="325" y="258" width="44" height="80" rx="15" fill="#EF4444"/>
+                <!-- Jacket lapels -->
+                <path d="M313 260 L330 290 L347 260" fill="#D1D5DB"/>
+                <path d="M381 260 L364 290 L347 260" fill="#D1D5DB"/>
+
+                <!-- Left arm holding laptop -->
+                <path d="M313 275 Q296 282 288 300 Q284 315 292 322" stroke="#E5E7EB" stroke-width="22" stroke-linecap="round" fill="none"/>
+                <!-- Right arm extended -->
+                <path d="M381 275 Q400 282 408 295" stroke="#E5E7EB" stroke-width="20" stroke-linecap="round" fill="none"/>
+
+                <!-- Laptop in left hand -->
+                <rect x="275" y="285" width="62" height="45" rx="8" fill="#1E293B"/>
+                <rect x="280" y="290" width="52" height="35" rx="5" fill="#0F172A"/>
+                <!-- Screen glow -->
+                <rect x="283" y="293" width="46" height="29" rx="3" fill="#1E40AF" opacity="0.6"/>
+                <polyline points="286,314 296,308 306,312 316,304 322,307" stroke="#60A5FA" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+                <!-- Head -->
+                <circle cx="347" cy="232" r="30" fill="#FDDBB4"/>
+                <!-- Hair (dark, neat) -->
+                <path d="M319 220 Q322 196 347 194 Q372 196 375 220 Q368 208 347 206 Q326 208 319 220 Z" fill="#1A1A2E"/>
+                <!-- Hair side -->
+                <ellipse cx="319" cy="225" rx="7" ry="10" fill="#1A1A2E"/>
+                <!-- Face -->
+                <ellipse cx="340" cy="234" rx="3.5" ry="4.5" fill="#5C3A1E" opacity="0.7"/>
+                <ellipse cx="355" cy="234" rx="3.5" ry="4.5" fill="#5C3A1E" opacity="0.7"/>
+                <path d="M341 246 Q347 251 353 246" stroke="#B45309" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                <!-- Ear -->
+                <ellipse cx="318" cy="236" rx="5" ry="7" fill="#F5C9A0"/>
+                <ellipse cx="376" cy="236" rx="5" ry="7" fill="#F5C9A0"/>
+                <!-- Neck -->
+                <rect x="339" y="260" width="16" height="18" rx="6" fill="#FDDBB4"/>
+              </g>
+
+              <!-- === FLOATING SPARKLES / DOTS === -->
+              <circle cx="260" cy="140" r="5" fill="#2563EB" class="adv-sparkle-1" opacity="0.5"/>
+              <circle cx="195" cy="195" r="4" fill="#34D399" class="adv-sparkle-2" opacity="0.5"/>
+              <circle cx="510" cy="260" r="4" fill="#2563EB" class="adv-sparkle-3" opacity="0.4"/>
+              <circle cx="300" cy="390" r="3" fill="#F59E0B" class="adv-sparkle-4" opacity="0.5"/>
+
+              <!-- Ground line -->
+              <line x1="150" y1="405" x2="530" y2="405" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
+
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Testimonials & Free Demo CTA Section
+       Signature Royal Blue Section with World Map Grid Watermark,
+       Auto-sliding Testimonials Carousel + Floating 3D WebP Demo Banner
+       ========================================================================= -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="testimonials-watermark"></div>
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="testimonials-header">
+        <h2 class="testimonials-title">What Our Traders Are Saying: Real<br>Experiences, Real Success</h2>
+      </div>
+
+      <!-- Testimonials Auto-Slide Carousel Wrapper -->
+      <div class="testimonials-carousel-wrapper">
+        
+        <!-- Navigation Controls (Prev / Next Buttons) -->
+        <button class="testi-nav-btn testi-prev" aria-label="Previous Testimonials" title="Previous Testimonials">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="testi-nav-btn testi-next" aria-label="Next Testimonials" title="Next Testimonials">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <!-- Carousel Track Overflow Viewport -->
+        <div class="testimonials-viewport">
+          <div class="testimonials-track" id="testiTrack">
+
+            <!-- Card 1 -->
+            <div class="testi-card">
+              <div class="testi-card-top">
+                <div class="testi-stars">
+                  <span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span>
+                </div>
+                <div class="testi-quote-icon">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <rect x="5" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                    <rect x="16" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+              </div>
+              <p class="testi-text">
+                Stackly has transformed my trading experience. The platform is intuitive and offers all the features I need.
+              </p>
+              <div class="testi-author">
+                <span class="author-name">John Doe</span>
+                <span class="author-divider">â€”</span>
+                <span class="author-role">Trader</span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testi-card">
+              <div class="testi-card-top">
+                <div class="testi-stars">
+                  <span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span>
+                </div>
+                <div class="testi-quote-icon">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <rect x="5" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                    <rect x="16" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+              </div>
+              <p class="testi-text">
+                I love the real-time data and instant execution. It's crucial for my trading strategy, and Stackly delivers flawlessly.
+              </p>
+              <div class="testi-author">
+                <span class="author-name">Emily R.</span>
+                <span class="author-divider">â€”</span>
+                <span class="author-role">Trader</span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testi-card">
+              <div class="testi-card-top">
+                <div class="testi-stars">
+                  <span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span>
+                </div>
+                <div class="testi-quote-icon">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <rect x="5" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                    <rect x="16" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+              </div>
+              <p class="testi-text">
+                The security measures on Stackly are top-notch. I feel confident knowing my assets are well protected.
+              </p>
+              <div class="testi-author">
+                <span class="author-name">John D.</span>
+                <span class="author-divider">â€”</span>
+                <span class="author-role">Trader</span>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="testi-card">
+              <div class="testi-card-top">
+                <div class="testi-stars">
+                  <span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span>
+                </div>
+                <div class="testi-quote-icon">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <rect x="5" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                    <rect x="16" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+              </div>
+              <p class="testi-text">
+                The diverse crypto and stock asset offerings make portfolio rebalancing effortless and extremely profitable.
+              </p>
+              <div class="testi-author">
+                <span class="author-name">Sarah M.</span>
+                <span class="author-divider">â€”</span>
+                <span class="author-role">Crypto Investor</span>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="testi-card">
+              <div class="testi-card-top">
+                <div class="testi-stars">
+                  <span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span>
+                </div>
+                <div class="testi-quote-icon">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <rect x="5" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                    <rect x="16" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+              </div>
+              <p class="testi-text">
+                Zero latency order execution has given me a tremendous competitive advantage during volatile market sessions.
+              </p>
+              <div class="testi-author">
+                <span class="author-name">Alex K.</span>
+                <span class="author-divider">â€”</span>
+                <span class="author-role">Day Trader</span>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="testi-card">
+              <div class="testi-card-top">
+                <div class="testi-stars">
+                  <span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span>
+                </div>
+                <div class="testi-quote-icon">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <rect x="5" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                    <rect x="16" y="8" width="9" height="11" rx="2" stroke="#2563EB" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+              </div>
+              <p class="testi-text">
+                The 24/7 dedicated customer support team resolved my verification inquiry within 5 minutes flat. Truly exceptional!
+              </p>
+              <div class="testi-author">
+                <span class="author-name">Michael T.</span>
+                <span class="author-divider">â€”</span>
+                <span class="author-role">Options Trader</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="testi-dots" id="testiDots">
+          <span class="testi-dot active" data-index="0"></span>
+          <span class="testi-dot" data-index="1"></span>
+          <span class="testi-dot" data-index="2"></span>
+          <span class="testi-dot" data-index="3"></span>
+        </div>
+
+      </div>
+
+      <!-- Free Demo CTA Card Banner -->
+      <div class="demo-cta-card">
+        <!-- Floating 3D graphics on left -->
+        <div class="demo-float-coin">
+          <img src="assets/images/demo-coin.webp" alt="3D Gold Bitcoin Coin" class="float-coin-img" width="70" height="70" loading="lazy">
+        </div>
+        <div class="demo-float-wallet">
+          <img src="assets/images/demo-wallet.webp" alt="3D Green Wallet with Cash" class="float-wallet-img" width="80" height="80" loading="lazy">
+        </div>
+
+        <!-- Center CTA Content -->
+        <div class="demo-cta-content">
+          <h3 class="demo-cta-title">
+            Not convinced yet? Explore our platform with<br>a free demo and see the difference
+          </h3>
+          <a href="404.html" class="btn-demo">
+            <span>Try Free Demo</span>
+            <svg viewBox="0 0 20 20" fill="none"><path d="M7 5l6 5-6 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Floating 3D graphics on right -->
+        <div class="demo-float-bag">
+          <img src="assets/images/demo-moneybag.webp" alt="Money Bag with Gold Coins" class="float-bag-img" width="150" height="150" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Articles & Blog Section
+       Matches screenshot: "ARTICLES", "Dive Deeper into Trading: Expert Insights and In-Depth Articles"
+       3 Modern Article Cards with WebP Illustrations, Tags, Dates, Headlines & Arrow Links
+       ========================================================================= -->
+  <section class="articles-section" id="blog">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="articles-header">
+        <span class="articles-tag">ARTICLES</span>
+        <h2 class="articles-title">
+          Dive Deeper into Trading: Expert<br>
+          Insights and In-Depth Articles
+        </h2>
+      </div>
+
+      <!-- Articles 3-Card Grid -->
+      <div class="articles-grid">
+
+        <!-- Article Card 1 -->
+        <article class="article-card" data-card="1">
+          <div class="article-thumb">
+            <img src="assets/images/article1-trading-bots.webp" alt="Maximizing Profits with Automated Trading Bots" class="article-img" loading="lazy">
+            <div class="article-thumb-glow"></div>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-category">Trading Tips</span>
+              <span class="article-meta-divider">â€”</span>
+              <span class="article-date">August 14, 2024</span>
+            </div>
+            <h3 class="article-card-title">
+              <a href="404.html">Maximizing Profits with Automated Trading Bots</a>
+            </h3>
+            <a href="404.html" class="article-arrow-link" aria-label="Read Maximizing Profits with Automated Trading Bots">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article Card 2 -->
+        <article class="article-card" data-card="2">
+          <div class="article-thumb">
+            <img src="assets/images/article2-dogecoin.webp" alt="The Rise of Dogecoin: From Meme to Mainstream" class="article-img" loading="lazy">
+            <div class="article-thumb-glow"></div>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-category">Cryptocurrency</span>
+              <span class="article-meta-divider">â€”</span>
+              <span class="article-date">August 14, 2024</span>
+            </div>
+            <h3 class="article-card-title">
+              <a href="404.html">The Rise of Dogecoin: From Meme to Mainstream</a>
+            </h3>
+            <a href="404.html" class="article-arrow-link" aria-label="Read The Rise of Dogecoin: From Meme to Mainstream">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article Card 3 -->
+        <article class="article-card" data-card="3">
+          <div class="article-thumb">
+            <img src="assets/images/article3-strategies.webp" alt="Top Trading Strategies for New Investors" class="article-img" loading="lazy">
+            <div class="article-thumb-glow"></div>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-category">Trading</span>
+              <span class="article-meta-divider">â€”</span>
+              <span class="article-date">August 14, 2024</span>
+            </div>
+            <h3 class="article-card-title">
+              <a href="404.html">Top Trading Strategies for New Investors</a>
+            </h3>
+            <a href="404.html" class="article-arrow-link" aria-label="Read Top Trading Strategies for New Investors">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Mobile App Download Section
+       Matches screenshot: Dual angled smartphone mockups on the left,
+       "Download our mobile App today exchange currency anytime", subtitle,
+       and authentic Apple App Store + Google Play store badges on the right.
+       ========================================================================= -->
+  <section class="app-download-section" id="app">
+    <div class="container">
+      <div class="app-download-grid">
+
+        <!-- Left Column: Dual Smartphones Showcase with 3D Parallax Tilt -->
+        <div class="app-phones-col">
+          <div class="app-phones-showcase">
+            <img src="assets/images/app-phones.webp" alt="Stackly Mobile App for iOS and Android" class="app-phones-img" width="560" height="842" loading="lazy">
+            <div class="app-phones-glow"></div>
+          </div>
+        </div>
+
+        <!-- Right Column: Heading, Subtitle & Download Badges -->
+        <div class="app-content-col">
+          <h2 class="app-download-title">
+            Download our mobile App today<br>
+            exchange currency anytime
+          </h2>
+          <p class="app-download-subtitle">
+            Stay in the know with our app and desktop client
+          </p>
+
+          <!-- Store Download Badges -->
+          <div class="app-store-badges">
+            
+            <!-- Apple App Store Badge -->
+            <a href="404.html" class="store-badge store-badge-apple" aria-label="Download Stackly on the Apple App Store">
+              <div class="store-badge-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 1.01-2.85-.9.04-2 .6-2.65 1.35-.58.66-1.09 1.73-1.04 2.76 1 .08 2.05-.51 2.68-1.26z"/>
+                </svg>
+              </div>
+              <div class="store-badge-text">
+                <span class="badge-sub">Download on the</span>
+                <span class="badge-title">App Store</span>
+              </div>
+            </a>
+
+            <!-- Google Play Store Badge -->
+            <a href="404.html" class="store-badge store-badge-google" aria-label="Get Stackly on Google Play">
+              <div class="store-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M3.6 1.8L14.4 12 3.6 22.2c-.4-.4-.6-1-.6-1.7V3.5c0-.7.2-1.3.6-1.7z" fill="#00C3FF"/>
+                  <path d="M18 8.6L14.4 12l3.6 3.4 3.4-1.9c1-.6 1-1.5 0-2.1L18 8.6z" fill="#FFC800"/>
+                  <path d="M3.6 1.8l10.8 10.2 3.6-3.4L6.9.7c-1.3-.7-2.6-.4-3.3 1.1z" fill="#00E676"/>
+                  <path d="M18 15.4L14.4 12 3.6 22.2c.7 1.5 2 1.8 3.3 1.1l11.1-7.9z" fill="#FF3A44"/>
+                </svg>
+              </div>
+              <div class="store-badge-text">
+                <span class="badge-sub">GET IT ON</span>
+                <span class="badge-title">Google Play</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Trusted Partners / Brands Marquee Section
+       Matches screenshot: Innovate, Vdemy, Touchdown, Planet, Creative Design, Inntel
+       Smooth infinite sliding marquee with transparent WebP logos (< 100KB)
+       ========================================================================= -->
+  <section class="partners-section">
+    <div class="container">
+      <div class="partners-marquee-wrapper">
+        <div class="partners-track">
+
+          <!-- Set 1 -->
+          <div class="partner-item">
+            <img src="assets/images/partner-innovate.webp" alt="Innovate" class="partner-logo" width="100" height="75" loading="lazy">
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/partner-vdemy.webp" alt="Vdemy" class="partner-logo" width="105" height="55" loading="lazy">
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/partner-touchdown.webp" alt="Touchdown Football Academy" class="partner-logo" width="105" height="75" loading="lazy">
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/partner-planet.webp" alt="Planet" class="partner-logo" width="115" height="75" loading="lazy">
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/partner-creative.webp" alt="Creative Design" class="partner-logo" width="95" height="75" loading="lazy">
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/partner-inntel.webp" alt="Inntel Communications" class="partner-logo" width="115" height="75" loading="lazy">
+          </div>
+
+          <!-- Set 2 (for seamless infinite loop) -->
+          <div class="partner-item">
+            <img src="assets/images/partner-innovate.webp" alt="Innovate" class="partner-logo" width="100" height="75" loading="lazy">
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/partner-vdemy.webp" alt="Vdemy" class="partner-logo" width="105" height="55" loading="lazy">
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/partner-touchdown.webp" alt="Touchdown Football Academy" class="partner-logo" width="105" height="75" loading="lazy">
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/partner-planet.webp" alt="Planet" class="partner-logo" width="115" height="75" loading="lazy">
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/partner-creative.webp" alt="Creative Design" class="partner-logo" width="95" height="75" loading="lazy">
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/partner-inntel.webp" alt="Inntel Communications" class="partner-logo" width="115" height="75" loading="lazy">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Final Call-to-Action (CTA) Banner Section
+       Matches screenshot: Signature Curved Royal Blue Container,
+       "Explore years of trading expertise in a matter of seconds" + Red Pill Button
+       ========================================================================= -->
+  <section class="cta-banner-section" id="explore">
+    <div class="container">
+      <div class="cta-banner-card">
+        <!-- Curved swirl watermark background -->
+        <div class="cta-banner-watermark"></div>
+
+        <div class="cta-banner-content">
+          <h2 class="cta-banner-title">
+            Explore years of trading expertise<br>
+            in a matter of seconds
+          </h2>
+          <a href="404.html" class="btn-cta-explore">
+            Let's Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Floating Scroll To Top Button -->
+  <button class="scroll-to-top" id="scrollTopBtn" aria-label="Scroll to top of page" title="Scroll to Top">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M18 15l-6-6-6 6" stroke="currentColor"/></svg>
+  </button>
+
+
+  <!-- =========================================================================
+       Site Footer
+       Matches screenshot:
+       Col 1: 3D Cube Logo + Stackly + Description
+       Col 2: "Quick Links" (Home, About, Feature, Shop, Blog, Contact)
+       Col 3: "Broker" headline (redirects to 404.html) with Benefits, Tools, Pricing, Market, Roadmap
+       Col 4: "Get the latest Stackly updates", Email Input Pill, Subscribe Button,
+              "Follow us" with Facebook, Twitter, Instagram, Discord, Telegram icons.
+       ========================================================================= -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand Info -->
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="brand-logo footer-logo" aria-label="Stackly Home">
+            <img src="assets/images/stackly_.webp" alt="Stackly Logo" class="brand-logo-img" height="38" style="height:38px;width:auto;display:block;">
+          </a>
+          <p class="footer-desc">
+            Stackly is a cutting-edge platform designed to simplify and enhance your trading experience. Ut enim diam viverra commodo nisi. Volutpat pellentesque ultrices libero viverra. Volutpat eu faucibus sem felis.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feature.html">Feature</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Broker -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Broker</h4>
+          <ul class="footer-links">
+            <li><a href="feature.html">Benefits</a></li>
+            <li><a href="shop.html">Tools</a></li>
+            <li><a href="shop.html">Pricing</a></li>
+            <li><a href="index.html#assets">Market</a></li>
+            <li><a href="404.html">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter & Socials -->
+        <div class="footer-col footer-col-newsletter">
+          <h4 class="footer-col-title">Get the latest Stackly updates</h4>
+          <form class="footer-subscribe-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Stackly updates!');">
+            <div class="input-pill-wrapper">
+              <input type="email" class="footer-input" placeholder="Enter your email address" required aria-label="Enter your email address">
+            </div>
+            <button type="submit" class="btn-footer-subscribe">Subscribe Now</button>
+          </form>
+
+          <div class="footer-social-section">
+            <h5 class="footer-social-title">Follow us</h5>
+            <div class="footer-social-icons">
+              <!-- Facebook -->
+              <a href="404.html" class="social-icon" aria-label="Follow Stackly on Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <!-- Twitter / X -->
+              <a href="404.html" class="social-icon" aria-label="Follow Stackly on Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              </a>
+              <!-- Instagram -->
+              <a href="404.html" class="social-icon" aria-label="Follow Stackly on Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </a>
+              <!-- Discord -->
+              <a href="404.html" class="social-icon" aria-label="Join Stackly Discord Community">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                </svg>
+              </a>
+              <!-- Telegram -->
+              <a href="404.html" class="social-icon" aria-label="Join Stackly on Telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-copy">&copy; 2026 Stackly. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="404.html">Privacy Policy</a>
+          <span class="legal-dot">&bull;</span>
+          <a href="404.html">Terms of Service</a>
+          <span class="legal-dot">&bull;</span>
+          <a href="404.html">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Controller -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3D Isometric Stackly Cube matching the screenshot logo icon -->
+  <!-- Top Face -->
+  <path d="M20 4L34 12L20 20L6 12L20 4Z" fill="#5E97FF"/>
+  <!-- Left Face -->
+  <path d="M6 12L20 20V36L6 28V12Z" fill="#2563EB"/>
+  <!-- Right Face -->
+  <path d="M20 20L34 12V28L20 36V20Z" fill="#1D4ED8"/>
+  <!-- Soft highlight lines -->
+  <path d="M20 4L34 12" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <path d="M20 20V36" stroke="rgba(0,0,0,0.15)" stroke-width="1"/>
+</svg>
